@@ -6,12 +6,7 @@ class AspectRatioWidget extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          Expanded(
-            child: Align(
-              alignment: Alignment.center,
-              child: AspectRatio(aspectRatio: 3 / 1, child: MyWidget()),
-            ),
-          ),
+          AspectRatio(aspectRatio: 5 / 2, child: MyWidget()),
         ],
       ),
     );

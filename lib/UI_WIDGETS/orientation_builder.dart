@@ -17,14 +17,24 @@ class OrientationBuilderWidget extends StatelessWidget {
   }
 
   Widget portraidMode() {
-    return Container(
-      // Portre modu açıkken ekranda gözükecekler
+    return Center(
+      child: Container(
+        // Portre modu açıkken ekranda gözükecekler
+        height: 150,
+        width: 150,
+        color: Colors.yellow,
+      ),
     );
   }
 
   Widget landScapeMode() {
-    return Container(
-      // Yatay mod açıkken ekranda gözükecekler
+    return Center(
+      child: Container(
+        // Yatay mod açıkken ekranda gözükecekler
+        height: 150,
+        width: 150,
+        color: Colors.grey,
+      ),
     );
   }
 }

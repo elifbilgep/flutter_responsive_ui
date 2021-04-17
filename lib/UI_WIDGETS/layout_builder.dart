@@ -13,25 +13,28 @@ class LayoutBuilderWidget extends StatelessWidget {
       },
     ));
   }
-
-  
 }
 
 class GenisEkran extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      //Yatay ekran da ne olacaksa
+      color: Colors.pink,
+      width: double.infinity,
+      height: double.infinity,
     );
   }
 }
-
 
 class DarEkran extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-       //Dikey ekran da ne olacaksa
+      //Dikey ekran da ne olacaksa
+
+      color: Colors.indigo,
+      width: double.infinity,
+      height: double.infinity,
     );
   }
 }

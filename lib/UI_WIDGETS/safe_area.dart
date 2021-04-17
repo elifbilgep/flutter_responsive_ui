@@ -5,8 +5,15 @@ class SafeAreaWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        backgroundColor: Colors.blue,
         body: Column(
-          children: [],
+          children: [
+            Container(
+              color: Colors.blue.shade100,
+              height: 100,
+              width: double.infinity,
+            )
+          ],
         ),
       ),
     );

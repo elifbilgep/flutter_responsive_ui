@@ -4,22 +4,22 @@ class FractionallySizedBoxWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Container(
-            color: Colors.white,
-            child: FractionallySizedBox(
-              widthFactor: 0.7,
-              child: FlatButton(
-                onPressed: () {
-                  print('hi');
-                },
-                color: Colors.blue,
-                child: Text('Say hi'),
+      body: Center(
+        child: Container(
+          color: Colors.grey,
+          child: FractionallySizedBox(
+            widthFactor: 0.5,
+            child: TextButton(
+              onPressed: () {
+                print('hi');
+              },
+              child: Text(
+                'Say hi',
+                style: Theme.of(context).textTheme.bodyText1,
               ),
             ),
-          )
-        ],
+          ),
+        ),
       ),
     );
   }
